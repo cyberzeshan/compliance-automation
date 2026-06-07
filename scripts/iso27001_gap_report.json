@@ -1,0 +1,207 @@
+{
+  "scan_metadata": {
+    "timestamp": "2026-06-07T09:41:10.574514",
+    "analyzer_version": "2.0.0",
+    "framework": "ISO/IEC 27001:2022"
+  },
+  "summary": {
+    "total_controls_checked": 14,
+    "implemented": 13,
+    "partial": 1,
+    "not_implemented": 0,
+    "maturity_percentage": 96.4,
+    "critical_gaps": 0
+  },
+  "by_theme": {
+    "Organizational": {
+      "implemented": 6,
+      "partial": 1,
+      "not_implemented": 0
+    },
+    "People": {
+      "implemented": 3,
+      "partial": 0,
+      "not_implemented": 0
+    },
+    "Physical": {
+      "implemented": 1,
+      "partial": 0,
+      "not_implemented": 0
+    },
+    "Technological": {
+      "implemented": 3,
+      "partial": 0,
+      "not_implemented": 0
+    }
+  },
+  "findings": [
+    {
+      "clause_ref": "4.1-4.2",
+      "control_name": "Organizational Context & Interested Parties",
+      "theme": "Organizational",
+      "status": "IMPLEMENTED",
+      "priority": "Medium",
+      "effort": "Medium",
+      "current_state": "Context document and stakeholder register are maintained",
+      "gap_description": null,
+      "recommended_action": null,
+      "timestamp": "2026-06-07T09:41:10.574688"
+    },
+    {
+      "clause_ref": "6.1.2",
+      "control_name": "Information Security Risk Assessment",
+      "theme": "Organizational",
+      "status": "IMPLEMENTED",
+      "priority": "Critical",
+      "effort": "Medium",
+      "current_state": "Risk assessment completed 180d ago; risk register maintained",
+      "gap_description": null,
+      "recommended_action": null,
+      "timestamp": "2026-06-07T09:41:10.574775"
+    },
+    {
+      "clause_ref": "6.1.3",
+      "control_name": "Statement of Applicability (SoA)",
+      "theme": "Organizational",
+      "status": "IMPLEMENTED",
+      "priority": "Critical",
+      "effort": "Medium",
+      "current_state": "SoA exists; reviewed 90d ago",
+      "gap_description": null,
+      "recommended_action": null,
+      "timestamp": "2026-06-07T09:41:10.574834"
+    },
+    {
+      "clause_ref": "7.3",
+      "control_name": "Security Awareness & Training",
+      "theme": "People",
+      "status": "IMPLEMENTED",
+      "priority": "High",
+      "effort": "Medium",
+      "current_state": "Training program active; 92% completion; phishing sim running",
+      "gap_description": null,
+      "recommended_action": null,
+      "timestamp": "2026-06-07T09:41:10.574885"
+    },
+    {
+      "clause_ref": "A.5.1",
+      "control_name": "Information Security Policies",
+      "theme": "Organizational",
+      "status": "IMPLEMENTED",
+      "priority": "Critical",
+      "effort": "Medium",
+      "current_state": "ISMS policy exists; reviewed 200d ago; mgmt approved",
+      "gap_description": null,
+      "recommended_action": null,
+      "timestamp": "2026-06-07T09:41:10.574946"
+    },
+    {
+      "clause_ref": "A.5.7",
+      "control_name": "Threat Intelligence",
+      "theme": "Organizational",
+      "status": "IMPLEMENTED",
+      "priority": "High",
+      "effort": "Medium",
+      "current_state": "Threat intel feed subscribed; alerts are actioned",
+      "gap_description": null,
+      "recommended_action": null,
+      "timestamp": "2026-06-07T09:41:10.574995"
+    },
+    {
+      "clause_ref": "A.5.9",
+      "control_name": "Asset Inventory & Ownership",
+      "theme": "Organizational",
+      "status": "IMPLEMENTED",
+      "priority": "High",
+      "effort": "Medium",
+      "current_state": "Inventory maintained in ServiceNow; owners assigned",
+      "gap_description": null,
+      "recommended_action": null,
+      "timestamp": "2026-06-07T09:41:10.575042"
+    },
+    {
+      "clause_ref": "A.6.1",
+      "control_name": "Personnel Background Screening",
+      "theme": "People",
+      "status": "IMPLEMENTED",
+      "priority": "High",
+      "effort": "Medium",
+      "current_state": "Pre-employment screening in place; policy documented",
+      "gap_description": null,
+      "recommended_action": null,
+      "timestamp": "2026-06-07T09:41:10.575086"
+    },
+    {
+      "clause_ref": "A.6.7",
+      "control_name": "Remote Working Controls",
+      "theme": "People",
+      "status": "IMPLEMENTED",
+      "priority": "High",
+      "effort": "Medium",
+      "current_state": "Remote work policy exists; VPN + endpoint protection enforced",
+      "gap_description": null,
+      "recommended_action": null,
+      "timestamp": "2026-06-07T09:41:10.575130"
+    },
+    {
+      "clause_ref": "A.7.1",
+      "control_name": "Physical Security Perimeter",
+      "theme": "Physical",
+      "status": "IMPLEMENTED",
+      "priority": "High",
+      "effort": "Medium",
+      "current_state": "Badge access, CCTV, and visitor log all in place",
+      "gap_description": null,
+      "recommended_action": null,
+      "timestamp": "2026-06-07T09:41:10.575174"
+    },
+    {
+      "clause_ref": "A.8.1",
+      "control_name": "User Endpoint Device Management",
+      "theme": "Technological",
+      "status": "IMPLEMENTED",
+      "priority": "High",
+      "effort": "Medium",
+      "current_state": "MDM deployed; disk encryption enforced; patch management active",
+      "gap_description": null,
+      "recommended_action": null,
+      "timestamp": "2026-06-07T09:41:10.575217"
+    },
+    {
+      "clause_ref": "A.8.25-8.26",
+      "control_name": "Secure Development & Application Security Testing",
+      "theme": "Technological",
+      "status": "IMPLEMENTED",
+      "priority": "High",
+      "effort": "Medium",
+      "current_state": "Secure SDLC policy; SAST in pipeline; DAST conducted; pentest 200d ago",
+      "gap_description": null,
+      "recommended_action": null,
+      "timestamp": "2026-06-07T09:41:10.575264"
+    },
+    {
+      "clause_ref": "A.5.12",
+      "control_name": "Data Classification & DLP",
+      "theme": "Organizational",
+      "status": "PARTIAL",
+      "priority": "High",
+      "effort": "High",
+      "current_state": "classification labels not applied to data assets; DLP solution not deployed",
+      "gap_description": "Information must be classified and protected according to its sensitivity",
+      "recommended_action": "Define classification tiers (Public/Internal/Confidential/Restricted); apply labels; deploy DLP",
+      "timestamp": "2026-06-07T09:41:10.575310"
+    },
+    {
+      "clause_ref": "A.8.20",
+      "control_name": "Network Security Controls",
+      "theme": "Technological",
+      "status": "IMPLEMENTED",
+      "priority": "High",
+      "effort": "Medium",
+      "current_state": "Segmentation in place; firewall rules reviewed 90d ago; IDS/IPS deployed",
+      "gap_description": null,
+      "recommended_action": null,
+      "timestamp": "2026-06-07T09:41:10.575355"
+    }
+  ]
+}

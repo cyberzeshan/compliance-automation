@@ -1,0 +1,189 @@
+{
+  "scan_metadata": {
+    "timestamp": "2026-06-07T09:41:01.828513",
+    "scanner_version": "2.0.0",
+    "framework": "PCI-DSS v4.0"
+  },
+  "scope": {
+    "total_components": 3,
+    "in_scope_count": 2,
+    "connected_to_count": 1,
+    "segmented_count": 0,
+    "components": [
+      {
+        "id": "WEB-01",
+        "name": "Payment Web Application",
+        "type": "web_server",
+        "scope": "IN_SCOPE",
+        "stores_pan": false,
+        "transmits_pan": true,
+        "processes_pan": true,
+        "controls": [
+          "WAF",
+          "TLS1.3",
+          "SAST"
+        ],
+        "notes": null
+      },
+      {
+        "id": "DB-01",
+        "name": "Cardholder Database",
+        "type": "database",
+        "scope": "IN_SCOPE",
+        "stores_pan": true,
+        "transmits_pan": false,
+        "processes_pan": true,
+        "controls": [
+          "AES-256",
+          "access_logging",
+          "least_privilege"
+        ],
+        "notes": null
+      },
+      {
+        "id": "CORP-01",
+        "name": "Corporate Network",
+        "type": "network_segment",
+        "scope": "CONNECTED_TO",
+        "stores_pan": false,
+        "transmits_pan": false,
+        "processes_pan": false,
+        "controls": [
+          "firewall",
+          "vlans"
+        ],
+        "notes": null
+      }
+    ]
+  },
+  "summary": {
+    "requirements_checked": 12,
+    "compliant": 12,
+    "non_compliant": 0,
+    "compliance_percentage": 100.0,
+    "total_individual_findings": 0
+  },
+  "requirements": [
+    {
+      "req_number": "1",
+      "req_title": "Network Security Controls",
+      "status": "COMPLIANT",
+      "severity": "Critical",
+      "evidence": "Firewall deployed; CDE segmented; restrictive rules; current network diagram",
+      "findings": [],
+      "remediations": [],
+      "timestamp": "2026-06-07T09:41:01.828779"
+    },
+    {
+      "req_number": "2",
+      "req_title": "Secure Configurations",
+      "status": "COMPLIANT",
+      "severity": "Critical",
+      "evidence": "Hardening standard documented; defaults changed; baseline enforced",
+      "findings": [],
+      "remediations": [],
+      "timestamp": "2026-06-07T09:41:01.828856"
+    },
+    {
+      "req_number": "3",
+      "req_title": "Protect Stored Account Data",
+      "status": "COMPLIANT",
+      "severity": "Critical",
+      "evidence": "PAN minimized, encrypted, masked; key management documented; no SAD stored",
+      "findings": [],
+      "remediations": [],
+      "timestamp": "2026-06-07T09:41:01.828914"
+    },
+    {
+      "req_number": "4",
+      "req_title": "Protect Cardholder Data in Transit",
+      "status": "COMPLIANT",
+      "severity": "Critical",
+      "evidence": "TLS 1.2+ enforced; weak protocols disabled; cert management in place",
+      "findings": [],
+      "remediations": [],
+      "timestamp": "2026-06-07T09:41:01.828965"
+    },
+    {
+      "req_number": "5",
+      "req_title": "Anti-Malware Protection",
+      "status": "COMPLIANT",
+      "severity": "High",
+      "evidence": "AV/EDR deployed; auto-updates enabled; logs reviewed (EDR active)",
+      "findings": [],
+      "remediations": [],
+      "timestamp": "2026-06-07T09:41:01.829015"
+    },
+    {
+      "req_number": "6",
+      "req_title": "Secure Systems & Software",
+      "status": "COMPLIANT",
+      "severity": "Critical",
+      "evidence": "Patches applied within SLA; secure coding; WAF/review; change control",
+      "findings": [],
+      "remediations": [],
+      "timestamp": "2026-06-07T09:41:01.829062"
+    },
+    {
+      "req_number": "7",
+      "req_title": "Restrict Access by Need to Know",
+      "status": "COMPLIANT",
+      "severity": "Critical",
+      "evidence": "Least privilege enforced; access matrix documented; quarterly review done",
+      "findings": [],
+      "remediations": [],
+      "timestamp": "2026-06-07T09:41:01.829107"
+    },
+    {
+      "req_number": "8",
+      "req_title": "Identify & Authenticate Users",
+      "status": "COMPLIANT",
+      "severity": "Critical",
+      "evidence": "MFA enforced for remote + CDE access; compliant password policy; no shared accounts",
+      "findings": [],
+      "remediations": [],
+      "timestamp": "2026-06-07T09:41:01.829152"
+    },
+    {
+      "req_number": "9",
+      "req_title": "Physical Access Controls",
+      "status": "COMPLIANT",
+      "severity": "High",
+      "evidence": "Access logs; media inventory; secure destruction; POS inspections all in place",
+      "findings": [],
+      "remediations": [],
+      "timestamp": "2026-06-07T09:41:01.829196"
+    },
+    {
+      "req_number": "10",
+      "req_title": "Logging & Monitoring",
+      "status": "COMPLIANT",
+      "severity": "Critical",
+      "evidence": "Logs on all components; 365d retention; daily review; NTP sync",
+      "findings": [],
+      "remediations": [],
+      "timestamp": "2026-06-07T09:41:01.829243"
+    },
+    {
+      "req_number": "11",
+      "req_title": "Security Testing",
+      "status": "COMPLIANT",
+      "severity": "High",
+      "evidence": "Quarterly internal + ASV scans; annual pentest; IDS/IPS deployed",
+      "findings": [],
+      "remediations": [],
+      "timestamp": "2026-06-07T09:41:01.829291"
+    },
+    {
+      "req_number": "12",
+      "req_title": "Security Policies & Program",
+      "status": "COMPLIANT",
+      "severity": "High",
+      "evidence": "Security policy; annual RA; IR plan; TPSP program all in place",
+      "findings": [],
+      "remediations": [],
+      "timestamp": "2026-06-07T09:41:01.829338"
+    }
+  ],
+  "all_findings": []
+}

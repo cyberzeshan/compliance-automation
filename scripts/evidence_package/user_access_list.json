@@ -1,0 +1,13 @@
+{
+  "collection_timestamp": "2026-06-07T09:41:16.517957+00:00",
+  "total_users": 1,
+  "users": [
+    {
+      "username": "example.user@company.com",
+      "role": "read-only",
+      "mfa_enabled": true,
+      "last_login": "2026-05-15",
+      "status": "active"
+    }
+  ]
+}

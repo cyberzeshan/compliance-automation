@@ -1,0 +1,127 @@
+{
+  "scan_metadata": {
+    "timestamp": "2026-06-07T09:40:53.791260",
+    "scanner_version": "2.0.0",
+    "framework": "SOC 2 Trust Services Criteria"
+  },
+  "summary": {
+    "total_controls": 10,
+    "passed": 10,
+    "failed": 0,
+    "warnings": 0,
+    "compliance_percentage": 100.0,
+    "critical_findings": 0
+  },
+  "results": [
+    {
+      "control_id": "CC6.1-01",
+      "control_name": "MFA Enforced for Privileged Accounts",
+      "tsc": "CC6.1",
+      "status": "PASS",
+      "severity": "Critical",
+      "evidence": "MFA policy enforced; 0 privileged accounts without MFA",
+      "finding": null,
+      "remediation": null,
+      "timestamp": "2026-06-07T09:40:53.791458"
+    },
+    {
+      "control_id": "CC6.1-02",
+      "control_name": "Encryption at Rest for Production Data",
+      "tsc": "CC6.1",
+      "status": "PASS",
+      "severity": "Critical",
+      "evidence": "Encryption at rest enabled; no unencrypted production data stores",
+      "finding": null,
+      "remediation": null,
+      "timestamp": "2026-06-07T09:40:53.791716"
+    },
+    {
+      "control_id": "CC6.2-01",
+      "control_name": "Formal Access Provisioning & Quarterly Review",
+      "tsc": "CC6.2",
+      "status": "PASS",
+      "severity": "High",
+      "evidence": "Provisioning process documented; last review 45 days ago",
+      "finding": null,
+      "remediation": null,
+      "timestamp": "2026-06-07T09:40:53.791801"
+    },
+    {
+      "control_id": "CC6.3-01",
+      "control_name": "Access Revocation Within SLA on Termination",
+      "tsc": "CC6.3",
+      "status": "PASS",
+      "severity": "High",
+      "evidence": "Avg revocation: 12h (SLA: 24h); automated=True",
+      "finding": null,
+      "remediation": null,
+      "timestamp": "2026-06-07T09:40:53.791865"
+    },
+    {
+      "control_id": "CC6.4-01",
+      "control_name": "Least Privilege / RBAC Enforcement",
+      "tsc": "CC6.4",
+      "status": "PASS",
+      "severity": "High",
+      "evidence": "RBAC implemented; 3 users (2.0%) flagged for excess access",
+      "finding": null,
+      "remediation": null,
+      "timestamp": "2026-06-07T09:40:53.791932"
+    },
+    {
+      "control_id": "CC7.2-01",
+      "control_name": "SIEM & Security Monitoring",
+      "tsc": "CC7.2",
+      "status": "PASS",
+      "severity": "High",
+      "evidence": "SIEM active; 87 rules; 365d retention",
+      "finding": null,
+      "remediation": null,
+      "timestamp": "2026-06-07T09:40:53.791989"
+    },
+    {
+      "control_id": "CC7.3-01",
+      "control_name": "Vulnerability Management & Patch SLA",
+      "tsc": "CC7.3",
+      "status": "PASS",
+      "severity": "High",
+      "evidence": "Scans every 7d; critical SLA 15d; 0 overdue criticals",
+      "finding": null,
+      "remediation": null,
+      "timestamp": "2026-06-07T09:40:53.792042"
+    },
+    {
+      "control_id": "CC7.4-01",
+      "control_name": "Incident Response Plan & Testing",
+      "tsc": "CC7.4",
+      "status": "PASS",
+      "severity": "High",
+      "evidence": "IR plan documented; last tabletop 180d ago; tracker: Jira",
+      "finding": null,
+      "remediation": null,
+      "timestamp": "2026-06-07T09:40:53.792094"
+    },
+    {
+      "control_id": "CC8.1-01",
+      "control_name": "Change Management Process",
+      "tsc": "CC8.1",
+      "status": "PASS",
+      "severity": "High",
+      "evidence": "Process documented; 98% approval rate; prod review required",
+      "finding": null,
+      "remediation": null,
+      "timestamp": "2026-06-07T09:40:53.792144"
+    },
+    {
+      "control_id": "CC9.1-01",
+      "control_name": "Vendor / Third-Party Risk Management",
+      "tsc": "CC9.1",
+      "status": "PASS",
+      "severity": "Medium",
+      "evidence": "Inventory maintained; 100% vendors contracted; annual review complete",
+      "finding": null,
+      "remediation": null,
+      "timestamp": "2026-06-07T09:40:53.792194"
+    }
+  ]
+}
